@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- The new doctype -->
+<html><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>itoopie - the simple I2P UI</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="icon" href="images/favicon.png">
+</head>
+<body>        
+    	<section id="page"> <!-- Defining the #page section with the section tag -->
+            <header> <!-- Defining the header section of the page with the appropriate tag -->
+                <hgroup>
+                    <h1 style="text-transform:lowercase">itoopie</h1>
+                    <h3>making I2P easy</h3>
+                </hgroup>
+                                
+                <nav class="clear"> <!-- The nav link semantically marks your main site navigation -->
+                    <ul>
+						<li><a href="#news">News</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#changelog">Changelog</a></li>
+                        <li><a href="#download">Download</a></li>
+                        <li><a href="#installation">Installation</a></li>
+						<li><a href="#technical">Technical</a></li>
+						<li><a href="#troubleshoot">Troubleshoot</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section id="articles">
+                <div class="line"></div>
+                
+                <article id="news"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
+                    <h2>News</h2>
+                    <div class="line"></div>
+                    <div class="articleBody clear">
+						<p>The signature of I2PControl has been changed, as a result it wont auto update from version 0.0.1/0.0.2 to 0.0.4.<br>
+							A manual remove and reinstall is needed to move from 0.0.1/0.0.2 to 0.0.4.<br>
+							If you are using 0.0.4 this does not affect you.
+						</p>
+                        
+                        <p>I2PControl has been ported to Jetty6 as <a href="http://i2p2.de">I2P</a> is no longer including Jetty5.</p>
+			<p>Any feedback is welcome <a href="http://forum.i2p2.de/viewtopic.php?p=34357">on the I2P forums</a> I'm also reachable on the I2P irc.</p>
+						<p>// hottuna</p>
+                    </div>
+                </article>
+            
+            <section id="articles">
+                <div class="line"></div>
+                
+                <article id="about"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
+                    <h2>About</h2>
+                    <div class="line"></div>
+                    <div class="articleBody clear">
+                    	<figure> <!-- The figure tag marks data (usually an image) that is part of the article -->
+	                    	<img src="images/itoopie-main.png">
+                        </figure>
+                        
+                        <p>itoopie is a simple graphical user interface for <a href="http://i2p2.de">I2P</a>.</p>
+						<p>itoopie connects to any <a href="http://i2p2.de">I2P</a> node running the I2PControl plugin. 
+The I2PControl plugin allows itoopie to connect to a <a href="http://i2p2.de">I2P</a> node even if it is running on another machine 
+and even if that machine is somewhere else on the internet.</p>
+                        <p>itoopie allows the user to set download and upload speed of <a href="http://i2p2.de">I2P</a> nodes. 
+Other features include setting network ports and choosing how much bandwidth to share with others. itoopie also support graphing bandwidth usage of <a href="http://i2p2.de">I2P</a> as well as graphing how many tunnels in the <a href="http://i2p2.de">I2P</a> network we are participating in now.</p>
+<br>
+<p>itoopie and I2PControl were sponsored by <a href="https://www.relakks.com/">Relakks</a> & <a href="https://blog.ipredator.se/">IPredator</a>.<br>
+Development began during the summer of 2011 and the first alpha was launched in Juli.<br><br>
+I'd like to thank Jan-Erik Fiske and Peter Sunde for actively helping privacy and anonymity online.<br>
+// hottuna</p>
+                    </div>
+                </article>
+
+                <div class="line"></div>
+
+                <article id="changelog">
+                    <h2>Changelog</h2>
+                    
+                    <div class="line"></div>
+                    
+                    <div class="articleBody clear">
+                    	<figure style="width:450px; height:260px;">
+	                    	<img src="images/itoopie-settings.png">
+                        </figure>
+						<p>Version 0.0.4 - I2PControl</p>
+						<tt> * I2PControl has been ported to Jetty6 as <a href="http://i2p2.de">I2P</a> is no longer including Jetty5. Shouldn't affect end users.</tt><br><br>
+
+						<p>Version 0.0.3 - I2PControl</p>
+						<tt> * Switched signature file of I2PControl. Meaning that updates have to be made from scratch.</tt><br><br>
+			
+						<p>Version 0.0.2</p>
+						<tt> * Support for monitoring netdb status and initiating a reseed if needed.</tt><br>
+ 						<tt> * Added support for changing which IP addresses I2PControl accepts. 127.0.0.1 is default, 0.0.0.0 is an option.</tt><br>
+						<tt> * Improved looks by realigning components and adding gradients to panels.</tt><br><br>
+
+                        <p>Version 0.0.1</p>
+						<tt> * Added graphs.</tt><br>
+						<tt> * Added support for changing the port of I2PControl.</tt>
+                    </div>
+                </article>
+
+                <div class="line"></div>
+                
+                <article id="download">
+                    <h2>Download</h2>
+                    <div class="line"></div>
+                    <div class="articleBody clear">
+                    	<figure style="width:512px; height:255px;">
+	                    	<img style="margin-top:-45px;" src="images/itoopie-opaque25-512.png">
+                        </figure>
+                        
+                        <p>Before running itoopie, <b>I2PControl needs to be installed</b>. Instruction can be found <a href="#installation">below</a>.</p>
+                        <p>itoopie can be downloaded from here, <a href="files/itoopie-install.exe">itoopie-install.exe</a>, <a href="files/itoopie-install.exe.sha512">checksum</a>.</p>
+						<p>The installer can be run by opening <tt>itoopie-install.exe</tt> or running <tt>java -jar itoopie-install.exe</tt> (yes, really).</p>
+						<p>If you're having issues starting itoopie or connecting to the <a href="http://i2p2.de">I2P</a> node, have a look at the <a href="#troubleshoot">Troubleshoot</a>-section.</p>
+						
+                    </div>
+                </article>
+
+				<!-- Article 3 start -->
+
+                <div class="line"></div>
+                <article id="installation">
+                    <h2>Installation</h2>
+                    <div class="line"></div>
+                    <div class="articleBody clear">
+                    	<figure>
+	                    	<img src="images/itoopie-configuration.png">
+                        </figure>
+                        
+                        <p>itoopie requires I2PControl to be installed on the <a href="http://i2p2.de">I2P</a> node you whish to connect to. The installation steps required are as follows.</p>
+						<p>Install I2PControl by visiting <a href="http://localhost:7657/configclients">http://localhost:7657/configclients</a> and entering <tt>http://itoopie.i2p/files/I2PControl.xpi2p</tt> in the 'Plugin Installation' field. Click 'Install Plugin' and wait for the plugin to be downloaded, installed and started (usually less than 1 minute).</p>
+
+                        <p>When I2PControl has been installed itoopie is ready to be installed, instructions can be found <a href="#download">above</a>.</p>
+                    </div>
+                </article>
+
+
+                <div class="line"></div>
+                
+                <article id="technical">
+                    <h2>Technical</h2>
+                    
+                    <div class="line"></div>
+                    
+                    <div class="articleBody clear">
+                    	<figure style="width:450px; height:260px;">
+	                    	<img src="images/itoopie-settings.png">
+                        </figure>
+						<p>The I2PControl plugin provides the I2PControl API used in itoopie. The API is used to interface with functionality found in the <a href="http://i2p2.de">I2P</a> router.</p>
+						<p>The API is provided by I2PControl is available over https to ensure that no information is sent in plain text.</p>
+						<p>Specifications for the I2PControl API can be found on <a href="http://i2p2.de/i2pcontrol.html">i2p2.de/i2pcontrol</a>.</p>
+                </article>
+                
+
+                <div class="line"></div>
+                
+                <article id="troubleshoot">
+                    <h2>Troubleshoot</h2>
+                    
+                    <div class="line"></div>
+                    
+                    <div class="articleBody clear">
+                    	<figure style="width:450px; height:260px;">
+	                    	<img src="images/itoopie-settings.png">
+                        </figure>
+						<p>If you're having issues establishing the connection between itoopie and <a hred="http://i2p2.de">I2P</a>, try restoring default settings by following the instructions below.</a>
+						<p>The default port for I2PControl is <tt>7650</tt>, the default password is <tt>itoopie</tt>. These settings can easily be restored by shutting down <a href="http://i2p2.de">I2P</a> and deleting a file called I2PControl.conf.</p>
+						<br><p>On Windows the file can be found in <br><tt>C:\Users\**username**\AppData\Roaming\I2P\plugins\I2PControl\</tt></p>
+<p>On Unix (Linux, Mac OSX and *BSD) the file will be found in <br><tt>~/.i2p/plugins/I2PControl/</tt></p>
+<p>After <a href="http://i2p2.de">I2P</a> has been started again settings will be restored to their defaults.</p>
+                    </div>
+                </article>
+
+
+            </section>            
+		</section> <!-- Closing the #page section -->   
+
+</body></html>
